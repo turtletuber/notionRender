@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { ExtendedRecordMap } from 'notion-types'
+import { ExtendedRecordMap } from '../../../packages/notion-types/src/index'
 
 import * as notion from '../lib/notion'
 import { NotionPage } from '../components/NotionPage'

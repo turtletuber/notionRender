@@ -63,5 +63,8 @@
       "prettier --write",
       "eslint --fix"
     ]
+  },
+  "dependencies": {
+    "notion-types": "^6.16.1"
   }
 }

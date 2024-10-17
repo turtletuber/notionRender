@@ -29,7 +29,8 @@ export const CollectionCard: React.FC<CollectionCardProps> = ({
   } = ctx
   let coverContent = null
 
-  const { page_cover_position = 0.5, card_cover_position = 0.5 } = block.format || {}
+  // Update this line
+  const { page_cover_position = 0.5, card_cover_position = 0.5 } = (block.format || {}) as { page_cover_position?: number; card_cover_position?: number }
   const coverPosition = (1 - page_cover_position) * 100
   const cardCoverPosition = (1 - card_cover_position) * 100
 
